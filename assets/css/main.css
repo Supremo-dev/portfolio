@@ -848,6 +848,7 @@ input[type="button"]:focus {
   bottom: 0;
   z-index: 2;
 }
+
 .about__content {
   position: relative;
   z-index: 1;
@@ -931,15 +932,31 @@ input[type="button"]:focus {
     height: 540px;
   }
   .about__visual {
+    display: none;
     width: 335px;
+  }
+  .about__content {
+    width: 100%;
   }
   .about__content-blurb h2 {
     font-size: 32px;
   }
+  .flex-container {
+    flex-direction: column;
+  }
+  .tools-container {
+    padding: 0;
+  }
+  .tools-title {
+    font-size: 32px;
+  }
+  .flex-container > div {
+    padding: 20px;
+  }
 }
 @media (max-width: 480px) {
   .about {
-    height: 480px;
+    height: 330px;
   }
   .about__wrapper::before {
     display: none;
